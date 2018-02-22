@@ -1,0 +1,319 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>hello</title>
+    <meta name="author" content="Qingwei" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- start: 移动设备自适应 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- end: 移动设备自适应 -->
+
+    <!-- start: CSS -->
+    <link th:href="@{/staticResources/css/bootstrap.min.css}" rel="stylesheet" />
+    <link th:href="@{/staticResources/css/bootstrap-responsive.min.css}" rel="stylesheet" />
+    <link th:href="@{/staticResources/css/style.css}" rel="stylesheet" />
+    <link th:href="@{/staticResources/css/style-responsive.css}" rel="stylesheet" />
+
+    <!-- end: CSS -->
+</head>
+<body>
+<!--/*@thymesVar id="name" type="java.lang.String"*/-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="index.html"><span>青薇小站</span></a>
+
+            <!-- start: Header Menu -->
+            <div class="nav-no-collapse header-nav">
+                <ul class="nav pull-right">
+                    <li class="dropdown hidden-phone">
+                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="icon-bell"></i>
+								<span class="badge red">
+								7 </span>
+                        </a>
+                        <ul class="dropdown-menu notifications">
+                            <li class="dropdown-menu-title">
+                                <span>你有11个通知</span>
+                                <a href="#refresh"><i class="icon-repeat"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon blue"><i class="icon-user"></i></span>
+                                    <span class="message">新用户注册</span>
+                                    <span class="time">1 min</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon green"><i class="icon-comment-alt"></i></span>
+                                    <span class="message">新的评论</span>
+                                    <span class="time">7 min</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon green"><i class="icon-comment-alt"></i></span>
+                                    <span class="message">新的评论</span>
+                                    <span class="time">8 min</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon yellow"><i class="icon-shopping-cart"></i></span>
+                                    <span class="message">2件物品出售</span>
+                                    <span class="time">1 hour</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- start: Notifications Dropdown -->
+                    <li class="dropdown hidden-phone">
+                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="icon-calendar"></i>
+								<span class="badge red">
+								5 </span>
+                        </a>
+                        <ul class="dropdown-menu tasks">
+                            <li class="dropdown-menu-title">
+                                <span>你有17个任务在进行</span>
+                                <a href="#refresh"><i class="icon-repeat"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">
+										<span class="header">
+											<span class="title">iOS 进展</span>
+											<span class="percent"></span>
+										</span>
+                                    <div class="taskProgress progressSlim red">80</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+										<span class="header">
+											<span class="title">Android 进展</span>
+											<span class="percent"></span>
+										</span>
+                                    <div class="taskProgress progressSlim green">47</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+										<span class="header">
+											<span class="title">ARM 进展</span>
+											<span class="percent"></span>
+										</span>
+                                    <div class="taskProgress progressSlim yellow">32</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-menu-sub-footer">查看所有任务项</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- end: Notifications Dropdown -->
+                    <!-- start: Message Dropdown -->
+                    <li class="dropdown hidden-phone">
+                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="icon-envelope"></i>
+								<span class="badge red">
+								4 </span>
+                        </a>
+                        <ul class="dropdown-menu messages">
+                            <li class="dropdown-menu-title">
+                                <span>你有9条信息</span>
+                                <a href="#refresh"><i class="icon-repeat"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="avatar"><img th:src="@{/staticResources/img/qingqing.png}"  /></span>
+										<span class="header">
+											<span class="from">
+										    	青青
+										     </span>
+											<span class="time">
+										    	6 min
+										    </span>
+										</span>
+                                        <span class="message">
+                                            薇薇最帅
+                                        </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="avatar"><img th:src="@{/staticResources/img/qingqing.png}"  /></span>
+										<span class="header">
+											<span class="from">
+										    	青青
+										     </span>
+											<span class="time">
+										    	56 min
+										    </span>
+										</span>
+                                        <span class="message">
+                                           老公超级无敌帅
+                                        </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-menu-sub-footer">查看所有信息</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- start: User Dropdown -->
+                    <li class="dropdown">
+                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="halflings-icon white user"></i> 青薇
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu-title">
+                                <span>账户设置</span>
+                            </li>
+                            <li><a href="#"><i class="halflings-icon user"></i> 查看资料</a></li>
+                            <li><a href="login.html"><i class="halflings-icon off"></i> 登出</a></li>
+                        </ul>
+                    </li>
+                    <!-- end: User Dropdown -->
+                </ul>
+            </div>
+            <!-- end: Header Menu -->
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid-full">
+    <div class="row-fluid">
+
+        <!-- start: Main Menu -->
+        <div id="sidebar-left" class="span2">
+            <div class="nav-collapse sidebar-nav">
+                <ul class="nav nav-tabs nav-stacked main-menu">
+                    <li><a href="index.html"><i class="icon-home"></i><span class="hidden-tablet"> 主页</span></a></li>
+                    <li>
+                        <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> 测试折叠菜单</span><span class="label label-important"> 3 </span></a>
+                        <ul>
+                            <li><a class="submenu" href="submenu.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> 菜单1</span></a></li>
+                            <li><a class="submenu" href="submenu2.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> 菜单2</span></a></li>
+                            <li><a class="submenu" href="submenu3.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> 菜单3</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="aaa.html"><i class="icon-home"></i><span class="hidden-tablet"> 设置</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end: Main Menu -->
+
+        <noscript>
+            <div class="alert alert-block span10">
+                <h4 class="alert-heading">Warning!</h4>
+                <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> enabled to use this site.</p>
+            </div>
+        </noscript>
+
+        <!-- start: Content -->
+        <div id="content" class="span10">
+
+
+            <ul class="breadcrumb">
+                <li>
+                    <i class="icon-home"></i>
+                    <a href="index.html">青薇小站</a>
+                    <i class="icon-angle-right"></i>
+                </li>
+                <li><a href="#">主页</a></li>
+            </ul>
+
+            <div class="row-fluid">
+                栏目1
+            </div>
+
+            <div class="row-fluid">
+                栏目2
+            </div>
+
+
+        <!-- end: Content -->
+        </div><!--/#content.span10-->
+    </div><!--/fluid-row-->
+</div>
+
+
+
+<div class="clearfix"></div>
+
+<footer>
+
+    <p>
+        <span style="text-align:left;float:left">&copy; 2018 <a href="downloads/janux-free-responsive-admin-dashboard-template/" alt="Bootstrap_Metro_Dashboard">Qingwei Responsive Dashboard</a></span>
+    </p>
+</footer>
+
+<!-- start: JavaScript-->
+
+<script th:src="@{/staticResources/js/jquery-1.9.1.min.js}"></script>
+<script th:src="@{/staticResources/js/jquery-migrate-1.0.0.min.js}"></script>
+
+<script th:src="@{/staticResources/js/jquery-ui-1.10.0.custom.min.js}"></script>
+
+<script th:src="@{/staticResources/js/jquery.ui.touch-punch.js}"></script>
+
+<script th:src="@{/staticResources/js/modernizr.js}"></script>
+
+<script th:src="@{/staticResources/js/bootstrap.min.js}"></script>
+
+<script th:src="@{/staticResources/js/jquery.cookie.js}"></script>
+
+<script th:src='@{/staticResources/js/fullcalendar.min.js}'></script>
+
+<script th:src='@{/staticResources/js/jquery.dataTables.min.js}'></script>
+
+<script th:src="@{/staticResources/js/excanvas.js}"></script>
+<script th:src="@{/staticResources/js/jquery.flot.js}"></script>
+<script th:src="@{/staticResources/js/jquery.flot.pie.js}"></script>
+<script th:src="@{/staticResources/js/jquery.flot.stack.js}"></script>
+<script th:src="@{/staticResources/js/jquery.flot.resize.min.js}"></script>
+
+<script th:src="@{/staticResources/js/jquery.chosen.min.js}"></script>
+
+<script th:src="@{/staticResources/js/jquery.uniform.min.js}"></script>
+
+<script th:src="@{/staticResources/js/jquery.cleditor.min.js}"></script>
+
+<script th:src="@{/staticResources/js/jquery.noty.js}"></script>
+
+<script th:src="@{/staticResources/js/jquery.elfinder.min.js}"></script>
+
+<script th:src="@{/staticResources/js/jquery.raty.min.js}"></script>
+
+<script th:src="@{/staticResources/js/jquery.iphone.toggle.js}"></script>
+
+<script th:src="@{/staticResources/js/jquery.uploadify-3.1.min.js}"></script>
+
+<script th:src="@{/staticResources/js/jquery.gritter.min.js}"></script>
+
+<script th:src="@{/staticResources/js/jquery.imagesloaded.js}"></script>
+
+<script th:src="@{/staticResources/js/jquery.masonry.min.js}"></script>
+
+<script th:src="@{/staticResources/js/jquery.knob.modified.js}"></script>
+
+<script th:src="@{/staticResources/js/jquery.sparkline.min.js}"></script>
+
+<script th:src="@{/staticResources/js/counter.js}"></script>
+
+<script th:src="@{/staticResources/js/retina.js}"></script>
+
+<script th:src="@{/staticResources/js/custom.js}"></script>
+<!-- end: JavaScript-->
+</body>
+</html>
